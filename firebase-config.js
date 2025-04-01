@@ -1,6 +1,13 @@
 // Importar Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import { 
+    getAuth, 
+    createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword, 
+    signInWithPopup, 
+    GoogleAuthProvider, 
+    sendPasswordResetEmail 
+} from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 
 // Configuración de Firebase
 const firebaseConfig = {
@@ -17,7 +24,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-// Función para registrar con correo y contraseña
+// Función para registrar usuario
 document.getElementById("registroForm").addEventListener("submit", function(event) {
     event.preventDefault();
     const email = document.getElementById("registroEmail").value;
@@ -32,7 +39,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
         });
 });
 
-// Función para iniciar sesión con correo y contraseña
+// Función para iniciar sesión
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
     const email = document.getElementById("loginEmail").value;
@@ -68,6 +75,6 @@ document.getElementById("resetPasswordForm").addEventListener("submit", function
             alert("Correo de recuperación enviado.");
         })
         .catch((error) => {
-            alert("Error: " + error.message);
+            alert("Error al recuperar contraseña: " + error.message);
         });
 });
