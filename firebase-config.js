@@ -6,7 +6,9 @@ import {
     signInWithEmailAndPassword, 
     signInWithPopup, 
     GoogleAuthProvider, 
-    sendPasswordResetEmail 
+    sendPasswordResetEmail,
+    onAuthStateChanged,
+    signOut
 } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 
 // Configuración de Firebase
@@ -19,6 +21,8 @@ const firebaseConfig = {
     appId: "1:772833916617:web:d8c39cfaad101f595ebf18",
     measurementId: "G-7R6HXR6CV2"
 };
+  
+
 
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
@@ -64,6 +68,11 @@ window.loginWithGoogle = function() {
         .catch((error) => {
             alert("Error al iniciar sesión con Google: " + error.message);
         });
+};
+
+// Función para registrar con Google (es igual a iniciar sesión)
+window.registerWithGoogle = function() {
+    loginWithGoogle(); // Usa la misma función para registro
 };
 
 // Función para recuperar contraseña
