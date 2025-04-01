@@ -29,6 +29,9 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
+
+
+
 // Función para registrar usuario
 document.getElementById("registroForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -44,6 +47,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
         });
 });
 
+
 // Función para iniciar sesión
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -53,27 +57,32 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     signInWithEmailAndPassword(auth, email, password)
         .then(() => {
             alert("Inicio de sesión exitoso.");
+            window.location.href = "cliente.html";
         })
         .catch((error) => {
             alert("Error al iniciar sesión: " + error.message);
         });
 });
 
+
 // Función para iniciar sesión con Google
 window.loginWithGoogle = function() {
     signInWithPopup(auth, provider)
         .then(() => {
             alert("Inicio de sesión con Google exitoso.");
+            window.location.href = "cliente.html";
         })
         .catch((error) => {
             alert("Error al iniciar sesión con Google: " + error.message);
         });
 };
 
+
 // Función para registrar con Google (es igual a iniciar sesión)
 window.registerWithGoogle = function() {
     loginWithGoogle(); // Usa la misma función para registro
 };
+
 
 // Función para recuperar contraseña
 document.getElementById("resetPasswordForm").addEventListener("submit", function(event) {
