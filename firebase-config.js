@@ -11,12 +11,13 @@ import {
 
 // Configuración de Firebase
 const firebaseConfig = {
-    apiKey: "TU_API_KEY",
-    authDomain: "TU_AUTH_DOMAIN",
-    projectId: "TU_PROJECT_ID",
-    storageBucket: "TU_STORAGE_BUCKET",
-    messagingSenderId: "TU_MESSAGING_SENDER_ID",
-    appId: "TU_APP_ID"
+    apiKey: "AIzaSyAY2Mp8Yocc69VA77IvLMw-claTtgYgBc8",
+    authDomain: "cocinas-valcucini-6dfba.firebaseapp.com",
+    projectId: "cocinas-valcucini-6dfba",
+    storageBucket: "cocinas-valcucini-6dfba.appspot.com", // Corrección del storageBucket
+    messagingSenderId: "772833916617",
+    appId: "1:772833916617:web:d8c39cfaad101f595ebf18",
+    measurementId: "G-7R6HXR6CV2"
 };
 
 // Inicializar Firebase
