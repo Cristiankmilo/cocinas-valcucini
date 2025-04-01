@@ -1,16 +1,15 @@
-// Importar Firebase y los servicios necesarios
+// Importar Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 
 // Configuración de Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyAY2Mp8Yocc69VA77IvLMw-claTtgYgBc8",
-    authDomain: "cocinas-valcucini-6dfba.firebaseapp.com",
-    projectId: "cocinas-valcucini-6dfba",
-    storageBucket: "cocinas-valcucini-6dfba.appspot.com", // Corrección del storageBucket
-    messagingSenderId: "772833916617",
-    appId: "1:772833916617:web:d8c39cfaad101f595ebf18",
-    measurementId: "G-7R6HXR6CV2"
+    apiKey: "TU_API_KEY",
+    authDomain: "TU_AUTH_DOMAIN",
+    projectId: "TU_PROJECT_ID",
+    storageBucket: "TU_STORAGE_BUCKET",
+    messagingSenderId: "TU_MESSAGING_SENDER_ID",
+    appId: "TU_APP_ID"
 };
 
 // Inicializar Firebase
@@ -18,42 +17,57 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
+// Función para registrar con correo y contraseña
+document.getElementById("registroForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("registroEmail").value;
+    const password = document.getElementById("registroPassword").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            alert("Registro exitoso. Ahora puedes iniciar sesión.");
+        })
+        .catch((error) => {
+            alert("Error al registrarse: " + error.message);
+        });
+});
+
+// Función para iniciar sesión con correo y contraseña
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            alert("Inicio de sesión exitoso.");
+        })
+        .catch((error) => {
+            alert("Error al iniciar sesión: " + error.message);
+        });
+});
+
 // Función para iniciar sesión con Google
 window.loginWithGoogle = function() {
     signInWithPopup(auth, provider)
-        .then((result) => {
-            console.log("Usuario autenticado:", result.user);
-            alert("Inicio de sesión exitoso");
-            window.location.href = "cliente.html"; // Redirigir a otra página después de iniciar sesión
+        .then(() => {
+            alert("Inicio de sesión con Google exitoso.");
         })
         .catch((error) => {
-            console.error("Error en autenticación:", error);
-            alert("Error al iniciar sesión con Google");
+            alert("Error al iniciar sesión con Google: " + error.message);
         });
 };
 
-// Función para registrar con Google (es igual a iniciar sesión)
-window.registerWithGoogle = function() {
-    loginWithGoogle(); // Usa la misma función para registro
-};
+// Función para recuperar contraseña
+document.getElementById("resetPasswordForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("resetEmail").value;
 
-// Detectar si el usuario ya inició sesión
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        document.getElementById("user-info").innerHTML = `
-            <p>Bienvenido, ${user.displayName}</p>
-            <img src="${user.photoURL}" width="50" class="rounded-circle">
-            <button class="btn btn-danger mt-2" onclick="logout()">Cerrar sesión</button>
-        `;
-    }
+    sendPasswordResetEmail(auth, email)
+        .then(() => {
+            alert("Correo de recuperación enviado.");
+        })
+        .catch((error) => {
+            alert("Error: " + error.message);
+        });
 });
-
-// Función para cerrar sesión
-window.logout = function() {
-    signOut(auth).then(() => {
-        alert("Sesión cerrada");
-        window.location.reload();
-    }).catch((error) => {
-        console.error("Error al cerrar sesión:", error);
-    });
-};

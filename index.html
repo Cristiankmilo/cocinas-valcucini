@@ -144,8 +144,6 @@
                                 <input type="password" class="form-control" placeholder="Contraseña" required>
                             </div>
 
-            
-                        
 
 
                             <button type="submit" class="btn btn-dark w-100"> Iniciar Sesión</button>
@@ -184,6 +182,23 @@
         </div>
     </div>
     
+        <!-- Modal de Restablecimiento de Contraseña -->
+    <div class="modal fade" id="ResetPasswordModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                <h2 class="fw-bold text-success">Recuperar Contraseña</h2>
+                <form id="resetPasswordForm">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="resetEmail" placeholder="Correo electrónico" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">Enviar Enlace</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <header class="hero-section">
         <div class="hero-content">
             <h1>Diseños que perduran</h1>
