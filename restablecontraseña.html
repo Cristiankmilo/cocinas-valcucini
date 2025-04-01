@@ -14,7 +14,9 @@
         }
     </style>
 </head>
+
 <body>
+
     <div class="container">
         <h2 class="text-center text-success">Cambiar Contraseña</h2>
         <p class="text-center text-muted">Ingresa tu nueva contraseña para restablecer tu cuenta.</p>
@@ -36,7 +38,7 @@
             apiKey: "AIzaSyAY2Mp8Yocc69VA77IvLMw-claTtgYgBc8",
             authDomain: "cocinas-valcucini-6dfba.firebaseapp.com",
             projectId: "cocinas-valcucini-6dfba",
-            storageBucket: "cocinas-valcucini-6dfba.appspot.com", // Corrección del storageBucket
+            storageBucket: "cocinas-valcucini-6dfba.appspot.com",
             messagingSenderId: "772833916617",
             appId: "1:772833916617:web:d8c39cfaad101f595ebf18",
             measurementId: "G-7R6HXR6CV2"
@@ -49,6 +51,8 @@
         // Obtener código de restablecimiento desde la URL
         const urlParams = new URLSearchParams(window.location.search);
         const oobCode = urlParams.get("oobCode");
+
+        console.log("Código de restablecimiento:", oobCode); // Verificar si el código es válido
 
         // Manejar el cambio de contraseña
         document.getElementById("changePasswordForm").addEventListener("submit", function(event) {
@@ -64,9 +68,15 @@
             auth.confirmPasswordReset(oobCode, newPassword)
                 .then(() => {
                     alert("Contraseña cambiada correctamente. Ahora puedes iniciar sesión.");
-                    window.location.href = "login.html"; // Redirigir al login
+
+                    // Cerrar sesión para evitar problemas con la sesión en caché
+                    return auth.signOut();
+                })
+                .then(() => {
+                    window.location.href = "index.html"; // Redirigir al login
                 })
                 .catch((error) => {
+                    console.error("Error al cambiar la contraseña:", error); // Mostrar errores en la consola
                     alert("Error: " + error.message);
                 });
         });
