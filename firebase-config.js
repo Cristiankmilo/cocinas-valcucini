@@ -41,6 +41,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     createUserWithEmailAndPassword(auth, email, password)
         .then(() => {
             alert("Registro exitoso. Ahora puedes iniciar sesión.");
+            window.location.href = "cliente.html";
         })
         .catch((error) => {
             alert("Error al registrarse: " + error.message);
