@@ -1,0 +1,88 @@
+body {
+    padding-top: 80px;
+    font-family: Arial, sans-serif;
+    background-color: #bb9d85;
+}
+
+
+  .mueble-formulario form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px #287467bd;
+    
+  }
+
+  
+  .titulo-mobiliario {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .mueble-formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  
+  .mueble-formulario select,
+  .mueble-formulario input[type="text"],
+  .mueble-formulario input[type="number"],
+  .mueble-formulario input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #287467bd;
+  }
+  
+  .mueble-formulario button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #287467bd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mueble-formulario button:hover {
+    background-color: #094239bd;
+  }
+  
+  .mueble-formulario .hidden {
+    display: none;
+  }
+
+footer a {
+    text-decoration: none;
+}
+
+footer .list-inline-item {
+    margin: 15 10px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #8b5e3c; /* Verde menta */
+    color: black; /* Cambiar color del texto si es necesario */
+    padding: 20px 0;
+    text-align: center;
+   
+}
+
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #654321; /* Un tono más oscuro al pasar el cursor */
+}
+  
+
+  

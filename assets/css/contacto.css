@@ -1,12 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F1E7;
+    background-color: #A67B5B;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 100px;
-
 }
 
 /* Estilos generales del navbar */
@@ -37,7 +33,7 @@ body {
 
 .btn-brown {
     background-color: #A67C52;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
 }
 
@@ -79,7 +75,7 @@ body {
     display: flex;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
+    box-shadow: 0px 4px 10px #51dfcc;
     padding: 20px;
     border: none;
     transition: box-shadow 0.5s ease-in-out;
@@ -109,7 +105,7 @@ body {
 /* Estilos del modal */
 .modal-content {
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.651);
     overflow: hidden;
 }
 
@@ -170,36 +166,38 @@ body {
 /****************contactanos *******************/
 
 .avatar2 {
-    width: 80%;
-    height: 80%;
+    width: 1200px; /* Aumenta el ancho */
     justify-content: center;
     align-items: center;
     position: absolute;
     left: 50%;
+    filter: brightness(50%);
     transform: translateX(-50%);
     border: 3px solid white;
-    box-shadow: 0px 5px 25px rgba(220, 209, 209, 0.827);
+    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.827);
 }
 
-main {
+.container.text-center.mb-5 {
     display: flex;
-    width: 80%;
     max-width: 1000px;
     position: relative;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 article {
     flex: 1;
     padding: 50px;
+    position: relative;
+    animation: fadeInLeft 1.5s ease-in-out;
+    margin-top: 100px;
 }
 article h1 {
     font-size: 3rem;
     font-weight: bold;
-    animation: fadeInLeft 1.5s ease-in-out;
+    
 }
 article p {
     margin-top: 10px;
-    animation: fadeInLeft 1.5s ease-in-out;
+    
 }
 .btn-learn {
     color: white;
@@ -217,6 +215,7 @@ aside {
     backdrop-filter: blur(10px);
     text-align: center;
     animation: fadeInLeft 1.5s ease-in-out;
+    margin-top: 100px;
 }
 .form-control2 {
     width: 100%; /* Que ocupen el ancho del contenedor */
@@ -230,13 +229,15 @@ aside {
     color: rgba(255, 255, 255, 0.6);
 }
 .btn-submit {
-    background: linear-gradient(to right, #26811f, #196913, #0e5508e7);
-    color: white;
+    background: linear-gradient(to right, #51dfcc, #208174, #c7eee9e7);
+    color: rgb(0, 0, 0);
     width: 50%;
     border-radius: 25px;
     padding: 10px;
     border: none;
 }
+
+
 
 /* Animaciones */
 @keyframes fadeInLeft {
@@ -261,6 +262,40 @@ aside {
     }
 }
 
+
+/*///////// pie de pagina ////////*/
+
+footer a {
+    text-decoration: none;
+}
+
+footer .list-inline-item {
+    margin: 15 10px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+
+main {
+    flex: 1; /* Esto empuja el footer hacia abajo */
+}
+
+footer {
+    background-color: #8b5e3c; /* Verde menta */
+    color: black; /* Cambiar color del texto si es necesario */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #654321; /* Un tono más oscuro al pasar el cursor */
+}
 
 
 

@@ -1,25 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F1E7;
-    color: #4A4A4A;
-    padding: 100px;
+    padding-top: 70px
 }
 
 /* Estilos generales del navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
-    background-color: #FAF8EB; /* Translucidez inicial */
+    background-color: #faf8eb5e; /* Translucidez inicial */
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
     
 }
 
 .nav-link:hover {
-    color: #A67C52;
+    color: #b89878;
 }
 
 .navbar.scrolled {
-    background-color: #A67B5B; /* Color madera al hacer scroll */
+    background-color: #b89878; /* Color madera al hacer scroll */
 }
 
 /* Ajustes para el navbar cuando colapsa */
@@ -32,28 +30,28 @@ body {
 }
 
 .btn-brown {
-    background-color: #A67C52;
+    background-color: #b89878;
     color: white;
     border: none;
 }
 
 .btn-brown:hover {
-    background-color: #8B5E3B;
+    background-color: #b89878;
 }
 
 .btn-outline-brown {
-    border: 2px solid #A67C52;
-    color: #A67C52;
+    border: 2px solid #b89878;
+    color: #b89878;
 }
 
 .btn-outline-brown:hover {
-    background-color: #A67C52;
+    background-color: #b89878;
     color: white;
 }
 
 /* DROPDOWN0 */
 .dropdown-menu {
-    background: #FAF8EB;
+    background: #b89878;
     padding: 10px;
     box-shadow: 0 3px 10px rgb(0, 0, 0);
 }
@@ -75,10 +73,8 @@ body {
     display: flex;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
     padding: 20px;
     border: none;
-    transition: box-shadow 0.5s ease-in-out;
 }
 
 .modal-content:hover {
@@ -164,8 +160,14 @@ body {
     background-color: #1a252f;
 }
 
+.bg-brown {
+    background-color: white !important;
+}
+
+
+/* CARDS */
 .card{
-    background-color: rgb(239, 232, 232)  !important;
+    background-color: #b89878 !important;
     min-height: 0px; /* Ajusta este valor según necesites */
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -174,7 +176,7 @@ body {
     text-wrap: balance;  /* Distribuye el texto de manera estética */
 }
 .card:hover {
-    box-shadow: 0px 0px 15px 5px #cc8144 ;
+    box-shadow: 0px 0px 15px 5px #3cbba4c0 ;
 }
 
 .card img {
@@ -187,6 +189,107 @@ body {
     transform: scale(1.1); /* Aumenta el tamaño en un 10% */
 }
 
-.letter-spacing {
-    letter-spacing: 2px; /* Espaciado entre letras */
+.custom-button{
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-decoration: none;
+    
 }
+
+.custom-button:hover{
+    background-color: #3cbba4c0;
+    box-shadow: 0px 0px 5px 2px white ;
+}
+
+
+/*///////// Modal categoria ////////*/
+
+
+/* Estilo general del modal */
+.modal-content-cate {
+    background: #b89878; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px; /* Ancho máximo */
+    margin: auto;
+}
+
+/* Cerrar botón */
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* Imagen dentro del modal */
+.modal-image-cate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+.modal-image-cate img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Texto dentro del modal */
+.modal-content-cate p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.modal-button{
+    background: #3cbba4c0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.modal-button:hover{
+    background: #26685cc0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+
+/*///////// pie de pagina ////////*/
+
+footer a {
+    text-decoration: none;
+}
+
+footer .list-inline-item {
+    margin: 15 10px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+
+main {
+    flex: 1; /* Esto empuja el footer hacia abajo */
+}
+
+footer {
+    background-color: #8b5e3c; /* Verde menta */
+    color: black; /* Cambiar color del texto si es necesario */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #654321; /* Un tono más oscuro al pasar el cursor */
+}
+
+

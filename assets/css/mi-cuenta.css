@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F1E7;
+    color: #4A4A4A;
+    padding-top: 100px;
+}
+
+/* Estilos generales del navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #faf8eb5e; /* Translucidez inicial */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
+    
+}
+.nav-link:hover {
+    color: #ffffff;
+}
+.navbar.scrolled {
+    background-color: #A67B5B; /* Color madera al hacer scroll */
+}
+
+
+/* Ajustes para el navbar cuando colapsa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    padding: 10px;
+}
+
+
+.btn-brown {
+    background-color: #A67C52;
+    color: white;
+    border: none;
+}
+
+.btn-brown:hover {
+    background-color: #8B5E3B;
+}
+
+.btn-outline-brown {
+    border: 2px solid #A67C52;
+    color: #A67C52;
+}
+
+.btn-outline-brown:hover {
+    background-color: #A67C52;
+    color: white;
+}
+
+/* DROPDOWN0 */
+.dropdown-menu {
+    background: #FAF8EB;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* ///////////////////menu icono //////////////////////// */
+
+/* Ícono de usuario en el navbar */
+.user-dropdown a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.user-dropdown a:hover {
+    color: #000;
+}
+
+/* Dropdown personalizado */
+.dropdown-menu {
+    min-width: 180px;
+    box-shadow: 0px 4px 10px rgba(75, 72, 72, 0.8);
+}
+
+/* Estilos para los ítems del dropdown */
+.dropdown-item {
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Separador dentro del dropdown */
+.dropdown-divider {
+    margin: 8px 0;
+}
+
+/* Botón "SALIR" con color rojo */
+.dropdown-item.logout {
+    color: #dc3545;
+}
+
+.dropdown-item.logout:hover {
+    background-color: #f8d7da;
+}
+
+
+/* /////////////////// Sección del perfil //////////////////////// */
+
+/* Tarjeta de perfil con animación */
+.card {
+    box-shadow: 0 5px 25px rgba(132, 131, 131, 0.701);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 20px ;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón Editar */
+.btn-dark {
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: rgba(4, 182, 64, 0.904);
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.modal-content:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulario */
+.form-control {
+    border-radius: 5px;
+}
+
+/* /////////////////// Imagen //////////////////////// */
+aside img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+aside img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(132, 131, 131, 0.701);
+}
+
+
+/* ///////////////////footer //////////////////////// */
+footer {
+    background-color: #f5f5dc; /* Color beige claro */
+    color: #5a5a5a;
+}
+
+footer a {
+    color: #8b5e3c; /* Color madera */
+    font-size: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #654321; /* Un tono más oscuro al pasar el cursor */
+}

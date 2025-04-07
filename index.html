@@ -6,44 +6,45 @@
     <title>Valcucini</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand ps-4" href="#" >
-                <img src="assets/images/LOGO2.png" width="130px" alt="Valcucini" class="logo">
+                <img src="assets/images/nav/LOGO.png" width="130px" alt="Valcucini" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">INMOBILIARIO</a>
+                        <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" onclick="window.location=this.href">Mobiliario</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">COCINAS</a></li>
-                            <li><a class="dropdown-item" href="#">CLOSETS</a></li>
-                            <li><a class="dropdown-item" href="#">ESCRITORIOS</a></li>
-                            <li><a class="dropdown-item" href="#">MUEBLES DE BAÑO</a></li>
-                            <li><a class="dropdown-item" href="#">RECEPCIÓN</a></li>
-                            <li><a class="dropdown-item" href="#">PUERTAS</a></li>
-                            <li><a class="dropdown-item" href="#">CENTRO DE ENTRETENIMIENTO</a></li>
-                            <li><a class="dropdown-item" href="#">MOBILIARIO Y MUCHO MAS</a></li>
-                            
+                            <li><a class="dropdown-item" href="cocinas.html">Cocinas</a></li>
+                            <li><a class="dropdown-item" href="closet.html">Closets</a></li>
+                            <li><a class="dropdown-item" href="escritorios.html">Escritorios</a></li>
+                            <li><a class="dropdown-item" href="muebledebaño.html">Muebles De Baño</a></li>
+                            <li><a class="dropdown-item" href="recepcion.html">Recepción</a></li>
+                            <li><a class="dropdown-item" href="puertas.html">Puertas</a></li>
+                            <li><a class="dropdown-item" href="entretinimiento.html">Centro De Entretenimiento</a></li>
+                            <li><a class="dropdown-item" href="mobiliario.html">Mobiliario Y Mucho Más</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a></li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <input class="form-control me-5" type="search" placeholder="Buscar...">
                 </form>
                 <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#RegistroModal">
-                    <i class="bi bi-person fs-3"></i>
+                    <i class="bi bi-person-circle fa-2x"></i>
                 </a> 
             </div>
         </div>
@@ -103,7 +104,7 @@
 
                     <!-- Sección de imagen -->
                     <div class="col-md-6 modal-image">
-                        <img src="assets/images/modal-img.jpg" alt="Imagen de registro" class="img-fluid imagen-modal">
+                        <img src="assets/images/nav/modal/modal-img.jpg" alt="Imagen de registro" class="img-fluid imagen-modal">
                     </div>
                 </div>
             </div>
@@ -119,9 +120,9 @@
                 <div class="row g-0">
                     <!-- Sección de imagen y avatar -->
                     <div class="col-md-6 p-0 position-relative">
-                        <img src="assets/images/modal-sesion.jpg" alt="Fondo de inicio de sesión" class="img-fluid imagen-fondo">
+                        <img src="assets/images/nav/modal/modal-sesion.jpg" alt="Fondo de inicio de sesión" class="img-fluid imagen-fondo">
                         <div class="avatar-container">
-                            <img src="assets/images/LOGO2.png" alt="Avatar" class="avatar">
+                            <img src="assets/images/nav/LOGO.png" alt="Avatar" class="avatar">
                         </div>
                     </div>
 
@@ -177,11 +178,10 @@
             </div>
         </div>
     </div>
-
-
+    
     <header class="hero-section">
         <div class="hero-content">
-            <h1>Diseños que perduran</h1>
+            <h1 style="font-family: 'Noto Sans KR', sans-serif; font-weight: 1100;">Diseños que perduran</h1>
             <p>calidad que impacta</p>
             <a href="#portafolio" class="btn btn-brown m-4 p-2 ">comencemos</a>
         </div>
@@ -200,7 +200,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="carousel-content">
-                                <img src="assets/images/1.jpg" class="d-block w-100" alt="Proyecto 1">
+                                <img src="assets/images/categoria_Baño/Baño1.jpg" class="d-block w-100" alt="Proyecto 1">
                                 <div class="carousel-caption d-flex justify-content-center">
                                     <a href="#" class="btn btn-brown">Ver</a>
                                 </div>
@@ -208,7 +208,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-content">
-                                <img src="assets/images/2.jpg" class="d-block w-100" alt="Proyecto 2">
+                                <img src="assets/images/categoria_Baño/Baño3.jpg" class="d-block w-100" alt="Proyecto 2">
                                 <div class="carousel-caption d-flex justify-content-center">
                                     <a href="#" class="btn btn-brown">Ver</a>
                                 </div>
@@ -216,7 +216,111 @@
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-content">
-                                <img src="assets/images/3.jpg" class="d-block w-100" alt="Proyecto 3">
+                                <img src="assets/images/categoria_Cocinas/Cocina.jpg" class="d-block w-100" alt="Proyecto 3">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_Cocinas/Cocina1.jpg" class="d-block w-100" alt="Proyecto 4">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_entretenimiento/Centro de entretenimiento1.jpg" class="d-block w-100" alt="Proyecto 5">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_entretenimiento/Centro de entretenimiento2.jpg" class="d-block w-100" alt="Proyecto 6">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_escritorios/Escritorio3.jpg" class="d-block w-100" alt="Proyecto 7">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_escritorios/Escritorio4.jpg" class="d-block w-100" alt="Proyecto 8">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_mobiliariomuchomas/Mobiliario3.jpg" class="d-block w-100" alt="Proyecto 9">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_mobiliariomuchomas/Mobiliario4.jpg" class="d-block w-100" alt="Proyecto 10">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_puertas/Puerta1.jpg" class="d-block w-100" alt="Proyecto 11">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_puertas/Puerta2.jpg" class="d-block w-100" alt="Proyecto 12">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_Closets/Closet1.jpg" class="d-block w-100" alt="Proyecto 13">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_Closets/Closet3.jpg" class="d-block w-100" alt="Proyecto 14">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_recepcion/Recepcion2.jpg" class="d-block w-100" alt="Proyecto 15">
+                                <div class="carousel-caption d-flex justify-content-center">
+                                    <a href="#" class="btn btn-brown">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="assets/images/categoria_recepcion/Recepcion4.jpg" class="d-block w-100" alt="Proyecto 16">
                                 <div class="carousel-caption d-flex justify-content-center">
                                     <a href="#" class="btn btn-brown">Ver</a>
                                 </div>
@@ -281,28 +385,6 @@
         </div>
     </section>
 
-    <section id="acerca" class="container my-4 text-center">
-        <div class="p-5 border rounded shadow-lg bg-light">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="assets/images/perfilqks.PNG" alt="Nosotros" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <h2>Sobre Nosotros</h2>
-                <p class="text-muted">
-                    En Valcucini, nos dedicamos a ofrecer soluciones innovadoras y de alta calidad para exhibir productos. 
-                    Nuestra misión es brindar una plataforma intuitiva, eficiente y atractiva que facilite la conexión entre clientes y empresas.
-                </p>
-                <p class="text-muted">
-                    Con un equipo apasionado y experto en tecnología, nos esforzamos por mejorar continuamente nuestra plataforma, 
-                    asegurando una experiencia única para nuestros usuarios.
-                </p>
-                <a href="#contacto" class="btn btn-brown mt-3">Contáctanos</a>
-            </div>
-        </div>
-        </div>
-    </section>
-
     <section id="best-sellers" class="container my-5">
         <h2 class="text-center">Más Vendidos</h2>
         <p class="text-center text-muted">Estos son los productos más vendidos en nuestra plataforma.</p>
@@ -312,27 +394,33 @@
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
                         <div class="product card"> 
-                            <img src="assets/images/m1.jpg" class="img-fluid" alt="Producto 1">
+                            <img src="assets/images/mas_vendido/m1.jpg" class="img-fluid" alt="Producto 1">
                         </div>
                         <div class="product card">
-                            <img src="assets/images/m2.jpg" class="img-fluid" alt="Producto 2">
+                            <img src="assets/images/mas_vendido/m2.jpg" class="img-fluid" alt="Producto 2">
                         </div>
                         <div class="product card">
-                            <img src="assets/images/m3.jpg" class="img-fluid" alt="Producto 3">
+                            <img src="assets/images/mas_vendido/m3.jpg" class="img-fluid" alt="Producto 3">
                         </div>
+                        <div class="product card">
+                            <img src="assets/images/mas_vendido/m6.jpg" class="img-fluid" alt="Producto 4">
+                        </div> 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center">
                         <div class="product card">
-                            <img src="assets/images/m4.jpg" class="img-fluid" alt="Producto 4">
+                            <img src="assets/images/mas_vendido/m4.jpg" class="img-fluid" alt="Producto 5">
                         </div>
                         <div class="product card">
-                            <img src="assets/images/m5.jpg" class="img-fluid" alt="Producto 5">
+                            <img src="assets/images/mas_vendido/m5.jpg" class="img-fluid" alt="Producto 6">
                         </div>
                         <div class="product card">
-                            <img src="assets/images/m6.jpg" class="img-fluid" alt="Producto 6">
+                            <img src="assets/images/mas_vendido/m6.jpg" class="img-fluid" alt="Producto 7">
                         </div>
+                        <div class="product card">
+                            <img src="assets/images/mas_vendido/m6.jpg" class="img-fluid" alt="Producto 8">
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -345,52 +433,39 @@
         </div>
     </section>
     
-
-    <footer class="bg-light py-4 mt-5">
+    <footer>
         <div class="container text-center">
-            <div class="row">
-              
-                <div class="col-md-4 mb-3">
-                    <h5>Sobre Nosotros</h5>
-                    <p>Valcucini es un espacio donde exhibimos los productos de nuestros clientes con diseño y elegancia.</p>
-                </div>
-    
-            
-                <div class="col-md-4 mb-3">
-                    <h5>Síguenos</h5>
-                    <div>
-                        <a href="#" class="mx-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="mx-2"><i class="bi bi-twitter"></i></a>
-                    </div>
-                </div>
-    
-             
-                <div class="col-md-4 mb-3">
-                    <h5>Contacto</h5>
-                    <p>Email: contacto@valcucini.com</p>
-                    <p>Teléfono: 350 231 0961</p>
-                </div>
+            <h5 class=" mt-5 mb-3">COCINAS VALCUCINI</h5>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="sobre_nosotros.html" class="text-dark">ACERCA DE NOSOTROS</a></li>
+                <li class="list-inline-item"><a href="categoria.html" class="text-dark">CATEGORÍAS</a></li>
+                <li class="list-inline-item"><a href="index.html" class="text-dark">INFORMACIÓN</a><li></li>
+            </ul>
+            <div class="my-3">
+                <a href="https://www.facebook.com/share/19MJMzzzCd/" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/valcucini_cocinas?igsh=MWtqa241NDF6cWt0dg==" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/3124339001" class="text-dark mx-2"><i class="fab fa-whatsapp"></i></a>
             </div>
-    
-        
-            <hr>
-    
-           
-            <p class="text-center">&copy; 2025 Valcucini. Todos los derechos reservados.by stevanT ; </p>
+            <p class="small">
+                <strong>TÉRMINOS Y CONDICIONES</strong> | LÍNEA NACIONAL: 01 8000 230854 - BOGOTÁ: PBX 388 43 90 - HORARIO DE ATENCIÓN: LUN-SAB 7:00 A.M A 7:00 PM
+                <br>
+                NOTIFICACIONES: CARRERA 49 # 141 - 27, BOGOTÁ, COLOMBIA
+                <br>
+                <a href="mailto:contactenos@cocinasvalcucini.com" class="text-dark">CONTACTENOS@COCINASVALCUCINI.COM</a> | RAZÓN SOCIAL: COCINAS VALCUCINI S.A.S. | NIT: 7.168.725-1
+                <br>© 2025 TODOS LOS DERECHOS RESERVADOS
+                <br>
+                <a href="#" class="text-dark">SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</a>
+            </p>
         </div>
     </footer>
+
     
-    
-    
-        
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
-    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="assets/js/firebase-config.js"></script>
 
 </body>
 </html>
