@@ -1,7 +1,7 @@
 body {
-    padding-top: 80px;
-    font-family: Arial, sans-serif;
-    background-color: #bb9d85;
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+  background-color: #bb9d85;
 }
 
 
@@ -57,33 +57,5 @@ body {
     display: none;
   }
 
-  /* FOOTER */
-
-footer a {
-    text-decoration: none;
-}
-
-footer .list-inline-item {
-    margin: 15 10px;
-}
-
-footer i {
-    font-size: 1.5rem;
-}
-
-footer {
-    background-color: #8b5e3c; /* Verde menta */
-    color: black; /* Cambiar color del texto si es necesario */
-    padding: 20px 0;
-    text-align: center;
-   
-}
-
-
-footer a:hover {
-    transform: scale(1.2);
-    color: #654321; /* Un tono más oscuro al pasar el cursor */
-}
-  
 
   

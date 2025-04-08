@@ -4,18 +4,16 @@
     background-color: #faf8eb5e; /* Translucidez inicial */
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
-    
+    font-family: 'Roboto Slab', serif;
 }
 .nav-link:hover {
     color: #ffffff;
-}
-.navbar.scrolled {
-    background-color: #A67B5B; /* Color madera al hacer scroll */
 }
 
 .navbar-nav.me-auto {
     font-size: 20px;
 }
+
 
 /* Ajustes para el navbar cuando colapsa */
 .navbar-toggler {
@@ -27,31 +25,11 @@
 }
 
 
-.btn-brown {
-    background-color: #A67C52;
-    color: white;
-    border: none;
-}
-
-.btn-brown:hover {
-    background-color: #8B5E3B;
-}
-
-.btn-outline-brown {
-    border: 2px solid #A67C52;
-    color: #A67C52;
-}
-
-.btn-outline-brown:hover {
-    background-color: #A67C52;
-    color: white;
-}
-
 /* DROPDOWN0 */
 .dropdown-menu {
     background: #FAF8EB;
     padding: 10px;
-    box-shadow: 0 3px 10px rgb(0, 0, 0);
+    box-shadow: 5px 3px 10px rgb(0, 0, 0);
 }
 
 /* Cuando el mouse pasa sobre el contenedor, muestra el menú */
@@ -162,7 +140,6 @@
 .bg-brown {
     background-color: white !important;
 }
-
 
 input.form-control:focus {
     border-color: #1E6D37; 
