@@ -166,97 +166,51 @@ body {
     background-color: white !important;
 }
 
-/* ////////////////producto ///////////////////////////*/
 
-.container-producto {
-    display: flex;
-    max-width: 80%;
-    max-height: auto;
-    margin: 50px auto;
-    background: #3cbba4c0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+/* CARDS */
+.card{
+    background-color: #b89878 !important;
+    min-height: 0px; /* Ajusta este valor según necesites */
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-title {
+    white-space: normal; /* Permite que el texto se ajuste */
+    
+}
+.card:hover {
+    box-shadow: 0px 0px 15px 5px #3cbba4c0 ;
 }
 
-.product-image {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    max-width: 60%;
-    max-height: auto;
+.card img {
+    max-height: 400px; /* Ajusta el máximo de altura según necesites */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
+
+.custom-button{
+    background-color: rgb(255, 255, 255);
+    border-color: #51dfccbe !important;
+    border-radius: 5px;
+    
+}
+
+.custom-button:hover{
+    background-color: #3cbba4c0;
+    border-color: #3cbba4c0;
+    box-shadow: 0px 0px 5px 2px white ;
 }
 
 
 
-.product-details {
-    flex: 1;
-    padding-left: 20px;
-}
 
-.btn-link {
-    text-decoration: none; /* Quita el subrayado */
-    color: #000000; /* Color del texto */
-    padding: 10px 15px;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out;
-    margin-left: 0%;
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 0;
+    
 }
-.btn-link:hover{
-    color: #000000;
-    background-color: #ffffff;
-    border: 2px solid #9a7e62;
-}
-
-h1 {
-    color: #000000;
-    margin-bottom: 20px;
-}
-
 ul li {
-    margin-bottom: 10px; /* Espaciado entre elementos */
+    margin-bottom: 5px; /* Espaciado entre elementos */
 }
-
-.calificacion {
-    font-size: 18px;
-}
-
-.specs {
-    margin-top: 20px;
-}
-
-.specs h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.specs li {
-    font-size: 14px;
-    margin-bottom: 13px;
-}
-
-/* Cerrar botón */
-.product-details {
-    position: relative; /* Necesario para que el btn-close se posicione correctamente */
-    padding: 20px;
-}
-
-/* Botón de cierre alineado arriba a la derecha */
-.btn-close-cate {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10; /* Asegura que esté por encima del contenido */
-}
-.btn-whatsapp {
-    background-color: #ffffff !important;
-    border-color: #3cbba4c0 !important;
-    color: rgb(0, 0, 0) !important;
-}
-
-.btn-whatsapp:hover {
-    background-color: #21806eb9 !important;
-    border-color: #21806eb9 !important;
-}
-
