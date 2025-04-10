@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A67B5B;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+/****************contactanos *******************/
+
+.avatar2 {
+    width: 1000px; /* Aumenta el ancho */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    filter: brightness(50%);
+    transform: translateX(-50%);
+    border: 3px solid white;
+    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.827);
+}
+
+.container.text-center.mb-5 {
+    display: flex;
+    max-width: 1000px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+article {
+    flex: 1;
+    padding: 50px;
+    position: relative;
+    animation: fadeInLeft 1.5s ease-in-out;
+    margin-top: 100px;
+}
+article h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+article p {
+    margin-top: 10px;
+    
+}
+.btn-learn {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+aside {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fadeInLeft 1.5s ease-in-out;
+    margin-top: 100px;
+}
+.form-control2 {
+    width: 100%; /* Que ocupen el ancho del contenedor */
+    min-height: 10px; 
+    padding: 5px;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.742); 
+    border: 1px solid #ccc;
+}
+.form-control2::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.btn-submit {
+    background: linear-gradient(to right, #51dfcc, #208174, #c7eee9e7);
+    color: rgb(0, 0, 0);
+    width: 50%;
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+}
+
+
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+

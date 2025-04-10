@@ -1,0 +1,84 @@
+body {
+    
+    background-color: #bb9d85;
+    color: #4A4A4A;
+    padding-top: 100px;
+}
+
+/* //////////////////////////////////////////letra ////////////////////////////////////////////// */
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;    
+}
+
+
+/* /////////////////// Sección del perfil //////////////////////// */
+
+/* Tarjeta de perfil con animación */
+.card {
+    box-shadow: 0 5px 25px rgba(132, 131, 131, 0.701);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50px ;
+    background-color: #ffffff; 
+    border-color: #A67C52;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ebe3d8;
+}
+.border-infor{
+    color: #000;
+    border-color: #000000;
+}
+
+/* Botón Editar */
+.btn-dark {
+    background-color: #287467bd;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #3cbba4c0;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #ebe3d8;
+}
+
+.modal-content:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulario */
+.form-control {
+    border-radius: 5px;
+}
+
+/* /////////////////// Imagen //////////////////////// */
+aside img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+aside img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(132, 131, 131, 0.701);
+}
+
